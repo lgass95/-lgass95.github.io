@@ -1,22 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <title>CSS Selectors</title>
 </head>
 <body>
-    <section class="Banner">
-        <h1>Luke Gass Review Blog</h1>
-    </section>
-    <section class="intro">
-        <p>Hello, and welcome to my blog. Here I will be posting my thoughts on a variety of subjects in the arts,<br>
-             literature and other forms of media. My hope is that by discussing my interests in written form, I<br>
-            will be able to express some original thoughts and ideas while also providing some entertainment to<br>
-             those who read.</p> 
-        <p>I thank you for stopping by and appreciate your readership.</p>
-    </section>
+    <h1>CSS Selectors</h1>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Term</th>
+            <th>Definition</th>
+            <th>Syntax</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="term">Type Selector</td>
+                <td>Used to match all elements of a given type or tag name. When using type selectors, elements are matched
+                    regardless of their nesting level in HTML.
+                </td>
+                <td class="syntax"><span class="selector1">p</span> {<br><br>
+                    } </td>
+            </tr>
+            <tr>
+                <td class="term">Class Selector</td>
+                <td>Matches HTML elements based on the contents of their <strong>class</strong> attribute. </td>
+                <td class="syntax"><span class="selector1">.category</span> {<br><br>}</td>
+            </tr>
+            <tr>
+                <td class="term">ID Selectors</td>
+                <td>The CSS ID selector matches elements based on the content of their <strong>id</strong> attribute. Requires a <strong>#</strong> to be prepended</td>
+                <td class="syntax">#name {<br><br>}</td>
+            </tr>
+            <tr>
+                <td class="term">Descendent Selector</td>
+                <td>The CSS <em>descendent</em> selector combinator is used to match elements that are descendended from another
+                     matched selector. They are denoted by a single spece between each selector and descended selector. All 
+                    matching elements are selected regardless of their nestng level in HTML.</td>
+                <td class="syntax"><span class="selector1">div p</span> { } 
+                <br><br><span class="selector1">section ol li</span> { } </td>
+            </tr>
+            <tr>
+                <td class="term">Chaining Selectors</td>
+                <td>CSS selectors can be chained so that rule sets apply only to match all criteria</td>
+                <td class="syntax"><span class="selector1">h3</span><span class="selector2">.section-heading</span> {<br>}</td>
+            </tr>
+            <tr>
+                <td class="term">Groups of CSS Selectors</td>
+                <td>Match multiple selectors to the same CSS rule, using a comma-separated list.</td>
+                <td class="syntax"><span class="selector1">h1</span>, <span class="selector1">h2 </span>{<br>}</td>
+            </tr>
+        </tbody>
+    
+    </table>
+    
 </body>
 </html>
